@@ -40,3 +40,9 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
+
+#Rottentomato:hover,
+#Frozenmoney:hover,
+#Clock:hover {
+  cursor: pointer;
+}
