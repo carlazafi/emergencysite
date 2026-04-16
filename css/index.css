@@ -1,0 +1,68 @@
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 90vw;
+  width: 65ch;
+}
+
+[popover] button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+:popover-open {
+  display: grid;
+}
+
+::backdrop {
+  background: #0001;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 1s allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
+}
+
+::backdrop {
+  opacity: 0;
+  transition: 1s allow-discrete;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.article_card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  border-radius: var(--border-radius-links);
+}
