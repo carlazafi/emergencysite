@@ -66,3 +66,6 @@
   background-color: white;
   border-radius: var(--border-radius-links);
 }
+.news-art {
+  background-color: #fff;
+}
