@@ -63,6 +63,8 @@
 .article_card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  row-gap: 2rem;
   background-color: white;
   border-radius: var(--border-radius-links);
 }
