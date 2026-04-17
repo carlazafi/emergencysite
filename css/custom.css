@@ -3,7 +3,7 @@
   --color-bg: #d0deba;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #c3dbff;
 
   /* Logotype */
   --color-logotype-bg: #2a2828;
@@ -11,15 +11,15 @@
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #c3dbff;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #c1272d;
   --color-link-hover: #fff;
   --color-link-active: #99958f;
-  --border-radius-links: 1px;
+  --border-radius-links: 2px;
 
   /* Headlines (size)*/
-  --font-h1-size: 1rem;
+  --font-h1-size: rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
 
@@ -57,5 +57,5 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #c3dbff;
 }

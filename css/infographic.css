@@ -9,6 +9,7 @@
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
+  padding: 2rem;
 }
 .info-text h2 {
   line-height: 3rem;

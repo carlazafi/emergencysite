@@ -19,7 +19,7 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/logo.svg" alt="">NØDRET</a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
@@ -35,10 +35,15 @@
 
   <main>
     <!-- header sektion -->
-
-    <h1>NØDHJÆLP TIL DIT KØKKEN</h1>
-    <p>nødret bla bla bla</p>
-
+    <div id="top-section-wrapper">
+      <sektion id="index_header">
+        <img src="img/hero_logo.svg" alt="">
+        <div>
+          <h1>NØDHJÆLP TIL DIT KØKKEN</h1>
+          <p>nødret bla bla bla</p>
+        </div>
+      </sektion>
+    </div>
     <!-- Sektion med artikler -->
     <div class="grid_2-1">
       <div>
@@ -85,21 +90,69 @@
         </article>
       </div>
 
-      <section>
-        <h2>breaking news</h2>
+      <!-- Sektion med breaking news -->
+      <section id="breaking_section">
+        <h2>Breaking news</h2>
         <div class="news-art">
           <h3>Brændt på igen!</h3>
           <p>Flere og flere brænder maden på. Det lugter.</p>
-          <a href="">Læs mere</a>
+          <a href="" class="btn">Læs mere</a>
         </div>
-        <p>tekst</p>
+
+        <div class="news-art">
+          <h3>Rekordtid</h3>
+          <img src="img/rekordtid.webp" alt="kvinde der har slået rekord">
+          <p>Hurtigste madlavning til dato</p>
+          <a href="" class="btn">Læs mere</a>
+        </div>
+
+        <div class="news-art">
+          <h3>GRATIS MAD</h3>
+          <p>Her kan du finde gratis fødevarer</p>
+          <a href="" class="btn">Læs mere</a>
+        </div>
+
       </section>
-      <!-- Sektion med breaking news -->
     </div>
+
     <!-- Sektion med accordion -->
 
-    <!-- popover -->
+    <section id="accordion-index">
+      <h2>Ofte stillede spørgsmål</h2>
+      <details name="faq-foldud">
+        <summary>Kan jeg bruge fødevarer der er udløbet?</summary>
+        <div>
+          <p>Hvis du skal bruge fødevarer der har overskredet udløbsdatoen, skal du benytte dig af dine sanser.
+            Kig på varen, kan man se mug mv. På de fleste grøntsager, kan råd skæres af og derved kan varen stadig
+            bruges. Hvis det er mug på brød eller andet, bør du smide det ud, da det vil sprede sig via sporer.
+          </p>
+        </div>
+      </details>
 
+      <details name="faq-foldud">
+        <summary>Kan man lave mad, uden at bruge penge?</summary>
+
+        <div>
+          <p>Indholdet vises kun, når &lt;details&gt; er åben.</p>
+        </div>
+      </details>
+
+      <details name="faq-foldud">
+        <summary>Hvordan bruger man sin samgssans?</summary>
+
+        <div>
+          <p>Indholdet vises kun, når &lt;details&gt; er åben.</p>
+        </div>
+      </details>
+
+      <details name="faq-foldud">
+        <summary>Hvordan laver jeg mad til mange mennesker?</summary>
+
+        <div>
+          <p>Indholdet vises kun, når &lt;details&gt; er åben.</p>
+        </div>
+      </details>
+    </section>
   </main>
 
   <footer>
@@ -124,6 +177,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
