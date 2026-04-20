@@ -3,23 +3,23 @@
   --color-bg: #d0deba;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #c3dbff;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
+  --color-logotype-bg: #c3dbff;
   --color-text-logotype: #c1bfb8;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #c3dbff;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #c1272d;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
-  --border-radius-links: 1px;
+  --color-link-active: black;
+  --border-radius-links: 2px;
 
   /* Headlines (size)*/
-  --font-h1-size: 1rem;
+  --font-h1-size: rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
 
@@ -32,7 +32,7 @@
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #000;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -57,5 +57,5 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #c3dbff;
 }

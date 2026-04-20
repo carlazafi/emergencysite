@@ -3,12 +3,13 @@
 }
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
+  background-color: white;
   padding: 20px 0;
 }
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
+  padding: 2rem;
 }
 .info-text h2 {
   line-height: 3rem;

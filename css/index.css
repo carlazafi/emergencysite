@@ -1,6 +1,5 @@
 [popover] {
   padding: 1rem;
-
   max-height: 90vh;
   max-width: 90vw;
   width: 65ch;
@@ -50,9 +49,23 @@
   }
 }
 
-.grid_2-1 {
+#top-section-wrapper {
+  background-color: yellowgreen;
+  p {
+    color: black;
+  }
+  img {
+    margin: 1rem;
+    max-width: 100%;
+  }
+}
+
+#index_header {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
 }
 
 .grid_1-2 {
@@ -63,9 +76,111 @@
 .article_card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  row-gap: 2rem;
+  margin: 2em;
+  padding: 1em;
   background-color: white;
-  border-radius: var(--border-radius-links);
+  border-radius: var(--border-radius);
+  h2 {
+    background-color: black;
+    color: #fff;
+  }
+  img {
+    max-width: 100%;
+  }
 }
+
 .news-art {
   background-color: #fff;
+  h3 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  }
+  p {
+    padding: 0.5rem;
+  }
+  a {
+    align-self: center;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #c1272d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* ACCORDION */
+
+#accordion-index {
+  align-self: center;
+}
+
+details {
+  outline: 2px solid #000;
+  background-color: #fff;
+}
+
+summary {
+  background: #c1272d;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content p {
+  margin: 0;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::after {
+  content: "+";
+}
+
+[open] summary::after {
+  content: "–";
+}
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+::details-content {
+  height: 0;
+  transition: 1s allow-discrete;
+  overflow: clip;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+@media (width > 600px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 }
