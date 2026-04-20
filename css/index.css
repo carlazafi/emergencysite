@@ -50,13 +50,13 @@
 }
 
 #top-section-wrapper {
-  background-color: red;
+  background-color: yellowgreen;
   p {
-    color: #fff;
+    color: black;
   }
   img {
-    max-height: 5rem;
     margin: 1rem;
+    max-width: 100%;
   }
 }
 
@@ -66,11 +66,6 @@
   align-items: center;
   gap: 1rem;
   margin: 2rem auto;
-}
-
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 
 .grid_1-2 {
@@ -90,6 +85,9 @@
   h2 {
     background-color: black;
     color: #fff;
+  }
+  img {
+    max-width: 100%;
   }
 }
 
@@ -178,4 +176,11 @@ html {
 
 [open]::details-content {
   height: auto;
+}
+
+@media (width > 600px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 }

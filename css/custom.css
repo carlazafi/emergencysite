@@ -6,7 +6,7 @@
   --color-head-bg: #c3dbff;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
+  --color-logotype-bg: #c3dbff;
   --color-text-logotype: #c1bfb8;
   --font-logotype-size: 1rem;
 
@@ -15,7 +15,7 @@
   /* Links */
   --color-link-bg: #c1272d;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-active: black;
   --border-radius-links: 2px;
 
   /* Headlines (size)*/

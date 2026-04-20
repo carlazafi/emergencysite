@@ -3,7 +3,7 @@
 }
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
+  background-color: white;
   padding: 20px 0;
 }
 .info-graphic {
