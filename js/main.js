@@ -1,29 +1,21 @@
-document
-  .querySelector("#Frozenmoney")
-  .addEventListener("click", infoFrozenmoney);
+const html = document.documentElement;
+const toggleSwitch = document.querySelector("#theme-toggle");
 
-document.querySelector("#Clock").addEventListener("click", infoClock);
-
-document
-  .querySelector("#Rottentomato")
-  .addEventListener("click", infoRottentomato);
-
-function infoFrozenmoney() {
-  console.log("infoFrozenmoney");
-  document.querySelector(".info-text > h2").textContent = "På budget";
-  document.querySelector(".placeholder").textContent = "SKRIV OM MAD PÅ BUDGET";
-  document.querySelector("#efficiency").textContent =
-    "Uden indkøb. Køb ikke mere ind, hvis du har varer i køleskabet";
-  dosument.querySelector("#requirement").textContent =
-    "Hvis du skal foretage indkøb billigt, så sørg for at tjekke kiloprisen på varene";
+function handleThemeChange(event) {
+  const isDark = toggleSwitch.checked;
+  html.classList.toggle("dark", isDark);
+  localStorage.setItem("isDarkMode", isDark);
 }
 
-function infoClock() {
-  console.log("infoClock");
-  document.querySelector(".info-text > h2").textContent = "Tidspresset";
+function getSavedTheme() {
+  // 1. hent det gemte theme
+  const isDark = localStorage.getItem("isDarkMode") === "true";
+  // 2. sync dark-klassen på html
+  html.classList.toggle("dark", isDark);
+  // 3. sync checkboxens checked-state
+  toggleSwitch.checked = isDark;
 }
 
-function infoRottentomato() {
-  console.log("infoRottentomato");
-  document.querySelector(".info-text > h2").textContent = "Mad der udløber";
-}
+getSavedTheme();
+
+toggleSwitch?.addEventListener("change", handleThemeChange);
