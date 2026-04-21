@@ -47,3 +47,7 @@
 #Clock:hover {
   cursor: pointer;
 }
+
+.buttons-wrapper > button:hover {
+  outline: 1px;
+}

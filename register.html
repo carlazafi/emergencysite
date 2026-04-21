@@ -40,8 +40,58 @@
         <h2>Overskrift</h2>
         <p>Tekst</p>
       </article>
-      <form id="webform"></form>
+
+      <form id="webform">
+
+        <fieldset>
+          <legend>Hvilken type måltid</legend>
+          <label for="morgenmad">
+            <input type="radio" id="morgenmad" name="foodtype">
+            Morgenmad
+          </label>
+          <label for="frokost">
+            <input type="radio" id="frokost" name="foodtype">
+            Frokost
+          </label>
+          <label for="aftensmad">
+            <input type="radio" id="aftensmad" name="foodtype">
+            Aftensmad
+          </label>
+        </fieldset>
+
+        <label for="slider">
+          <input type="range" value="0" id="slider" min="10kr" max="2000kr">
+        </label>
+        <output for="slider" id="slider-value">0</output>
+
+        <label for="madvare">
+          Madvare
+          <input type="text" id="madvare">
+        </label>
+
+        <fieldset>
+          <legend>Type af måltid</legend>
+          <label for="solo">
+            <input type="checkbox" id="solo">
+            En person
+          </label>
+          <label for="smallguests">
+            <input type="checkbox" id="smallguests">
+            Lille selskab
+          </label>
+          <label for="big">
+            <input type="checkbox" id="big">
+            Stort selskab
+          </label>
+        </fieldset>
+
+        <button>Indsend data</button>
+
+      </form>
+
     </section>
+
+
     <section id="form-summary">
       <h2>Summary</h2>
       <article>
@@ -71,6 +121,14 @@
       </ul>
     </nav>
   </footer>
+  <script>
+    function updatesResult() {
+      console.log("updateResult")
+      const newValue = document.querySelector("#slider").valueAsNumber;
+      document.querySelector("#slider-value").value = newValue;
+    }
+    document.querySelector("#slider").addEventListener("input", updatesResult)
+  </script>
 </body>
 
 </html>

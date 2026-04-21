@@ -30,3 +30,7 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+label {
+  display: block;
+}
