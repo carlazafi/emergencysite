@@ -17,5 +17,4 @@ function getSavedTheme() {
 }
 
 getSavedTheme();
-
 toggleSwitch?.addEventListener("change", handleThemeChange);

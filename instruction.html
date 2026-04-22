@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/infographic.css">
+  <link rel="stylesheet" href="css/toggle.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -19,10 +20,12 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html">
+          <img src="img/logo.svg" alt="NØDRET logo">
+        </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="instruction.html">Hjælp</a></li>
         <li><a class="menuItem" href="register.html">Indberet</a></li>
       </ul>
       <button class="burger">
@@ -31,6 +34,10 @@
         <span class="line"></span>
       </button>
     </nav>
+    <label>
+      <span class="visually-hidden">lyst/mørkt</span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
   </header>
 
   <main>
@@ -233,6 +240,7 @@
   </footer>
   <script src="js/main.js"></script>
   <script src="js/infographic.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

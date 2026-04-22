@@ -1,24 +1,16 @@
 html {
   color-scheme: light;
-  /*   --color-heading: light-dark(#5000ca, #e0d3ff);
-  --color-text: light-dark(#555, #cdc7dc);
-  --color-bg: light-dark(#fff, #222); */
-
-  color: var(--color-text);
-  background-color: var(--color-bg);
 }
 
 html.dark {
   color-scheme: dark;
 }
 
-h1 {
-  color: var(--color-heading);
-}
-
+/* Toggle switch UI */
 #theme-toggle {
   --h: 2rem;
   --w: 3rem;
+
   font: inherit;
   appearance: none;
   background: gainsboro;
@@ -27,20 +19,22 @@ h1 {
   border: 1px solid #000;
   cursor: pointer;
   border-radius: 9999px;
+  position: relative;
 }
 
 #theme-toggle::before {
   content: "";
-  display: block;
-  padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
   height: 100%;
   aspect-ratio: 1;
-  background: gray content-box;
-  border-radius: inherit;
+  background: gray;
+  border-radius: 50%;
   transition: 0.3s;
 }
 
 #theme-toggle:checked::before {
-  background-color: green;
-  translate: calc(var(--w) - var(--h));
+  transform: translateX(calc(var(--w) - var(--h)));
 }
