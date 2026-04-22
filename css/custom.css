@@ -1,8 +1,7 @@
 html {
-  /*  darkmode */
-
   /* Background color */
   --color-bg: #d0deba;
+  --color-special-bg: yellowgreen;
 
   /* Header background color */
   --color-head-bg: #c3dbff;
@@ -14,6 +13,7 @@ html {
 
   /* Global menu */
   --color-menu-bg: #c3dbff;
+
   /* Links */
   --color-link-bg: #c1272d;
   --color-link-hover: #fff;
@@ -21,7 +21,7 @@ html {
   --border-radius-links: 2px;
 
   /* Headlines (size)*/
-  --font-h1-size: rem;
+  --font-h1-size: 2rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
 
@@ -31,10 +31,11 @@ html {
 
   /* Headlines (color) */
   --color-headline-bg: #c3dbff;
+  --color-news-headline-bg: black;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #000;
+  --color-text-inverted: #fff;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -51,6 +52,9 @@ html {
   --color-cta-card-bg: #847f7e;
   --color-cta-card-bg-inverted: #c0bfb9;
 
+  /* Article Cards */
+  --color-article-bg: #fff;
+
   /* Fonts & font weights*/
   --font-family-sans: ui-sans-serif;
   --font-weight-bold: 700;
@@ -60,4 +64,73 @@ html {
 
   /* Infographics background colors*/
   --color-info-bg: #c3dbff;
+}
+
+#top-section-wrapper {
+  background-color: var(--color-special-bg);
+}
+
+#top-section-wrapper p {
+  color: var(--color-text);
+}
+
+.article_card {
+  background-color: var(--color-article-bg);
+  border-radius: var(--border-radius);
+}
+
+.article_card h2 {
+  background-color: var(--color-headline-bg);
+  color: var(--color-text);
+}
+
+.news-art {
+  background-color: var(--color-article-bg);
+}
+
+.news-art h3 {
+  background-color: var(--color-news-headline-bg);
+  color: var(--color-text-inverted);
+}
+
+.article_card,
+.news-art {
+  border: 1px solid var(--color-border);
+}
+
+.btn {
+  background-color: var(--color-link-bg);
+  color: var(--color-text-inverted);
+}
+/* DARKMODE */
+html.dark {
+  --color-bg: #0f1115;
+  --color-special-bg: #1f6f3a;
+
+  --color-head-bg: #171a21;
+  --color-menu-bg: #171a21;
+
+  --color-logotype-bg: #171a21;
+  --color-text-logotype: #ffffff;
+
+  --color-text: #e6e6e6;
+  --color-text-inverted: #0f1115;
+
+  --color-article-bg: #1c212b;
+  --color-card-bg: #1c212b;
+  --color-card-bg-inverted: #2a2f3a;
+
+  --color-cta-card-bg: #333;
+  --color-cta-card-bg-inverted: #444;
+
+  --color-headline-bg: #262c38;
+  --color-news-headline-bg: #2d3442;
+
+  --color-link-bg: #ff4d5a;
+  --color-link-hover: #ffffff;
+  --color-link-active: #999;
+
+  --color-info-bg: #1b202a;
+
+  --color-border: rgba(255, 255, 255, 0.08);
 }

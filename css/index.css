@@ -50,10 +50,6 @@
 }
 
 #top-section-wrapper {
-  background-color: yellowgreen;
-  p {
-    color: black;
-  }
   img {
     margin: 1rem;
     max-width: 100%;
@@ -80,22 +76,15 @@
   row-gap: 2rem;
   margin: 2em;
   padding: 1em;
-  background-color: white;
+  background-color: var(--color-article-bg);
   border-radius: var(--border-radius);
-  h2 {
-    background-color: black;
-    color: #fff;
-  }
   img {
     max-width: 100%;
   }
 }
 
 .news-art {
-  background-color: #fff;
   h3 {
-    background-color: black;
-    color: white;
     padding: 1rem;
   }
   p {
@@ -114,8 +103,6 @@
   width: fit-content;
   margin: 10px auto;
   padding: 10px 20px;
-  background-color: #c1272d;
-  color: white;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 10px;
