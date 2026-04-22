@@ -50,13 +50,14 @@
 
 .buttons-wrapper {
   display: flex;
-
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .buttons-wrapper > button {
-  padding: 5px 12px;
-  border-radius: var(--border-radius-links);
+  padding: 12px 16px;
+  font-size: 1.5rem;
+  border-radius: 45px;
   border: none;
   background-color: var(--color-link-bg);
 }
