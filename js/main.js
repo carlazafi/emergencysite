@@ -44,7 +44,6 @@ form.addEventListener("submit", function (e) {
       .join(", ") || "Ingen valgt";
 
   summary.innerHTML = `
-    
     <p><strong>Måltid:</strong> ${foodtype}</p>
     <p><strong>Budget:</strong> ${budget} kr</p>
     <p><strong>Madvarer:</strong> ${madvare}</p>
