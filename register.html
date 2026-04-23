@@ -53,41 +53,43 @@
         <fieldset>
           <legend>Hvilken type måltid</legend>
           <label for="morgenmad">
-            <input type="radio" id="morgenmad" name="foodtype">
+            <input type="radio" id="morgenmad" name="foodtype" value="Morgenmad">
             Morgenmad
           </label>
           <label for="frokost">
-            <input type="radio" id="frokost" name="foodtype">
+            <input type="radio" id="frokost" name="foodtype" value="Frokost">
             Frokost
           </label>
           <label for="aftensmad">
-            <input type="radio" id="aftensmad" name="foodtype">
+            <input type="radio" id="aftensmad" name="foodtype" value="Aftensmad">
             Aftensmad
           </label>
         </fieldset>
 
         <label for="slider">
-          <input type="range" value="0" id="slider" min="10kr" max="2000kr">
+          Budget
+          <input type="range" value="0" id="slider" min="0" max="3000">
+
         </label>
         <output for="slider" id="slider-value">0</output>
 
         <label for="madvare">
-          Madvare
+          Madvare(r)
           <input type="text" id="madvare">
         </label>
 
         <fieldset>
           <legend>Type af måltid</legend>
           <label for="solo">
-            <input type="checkbox" id="solo">
+            <input type="checkbox" id="solo" value="Én person">
             En person
           </label>
           <label for="smallguests">
-            <input type="checkbox" id="smallguests">
+            <input type="checkbox" id="smallguests" value="Lille selskab">
             Lille selskab
           </label>
           <label for="big">
-            <input type="checkbox" id="big">
+            <input type="checkbox" id="big" value="Stort selskab">
             Stort selskab
           </label>
         </fieldset>
