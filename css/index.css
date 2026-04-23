@@ -1,13 +1,23 @@
 [popover] {
-  padding: 1rem;
-  max-height: 90vh;
-  max-width: 90vw;
-  width: 65ch;
+  display: grid;
+  gap: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  max-width: 300px;
+  width: 90%;
+
+  background-color: var(--color-article-bg);
+  color: var(--color-text);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  inset: 0;
+  margin: auto;
 }
 
 [popover] button {
-  position: sticky;
-  top: 0;
   justify-self: end;
 }
 
@@ -17,6 +27,8 @@
 
 ::backdrop {
   background: #0001;
+  opacity: 0;
+  transition: 1s allow-discrete;
 }
 
 [popover] {
@@ -32,11 +44,6 @@
   :popover-open {
     opacity: 0;
   }
-}
-
-::backdrop {
-  opacity: 0;
-  transition: 1s allow-discrete;
 }
 
 :popover-open::backdrop {
